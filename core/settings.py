@@ -106,4 +106,5 @@ USE_TZ = True
 STATIC_URL = 'static/'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
+    'tasks-notes-g3e4hubxd2fxcaej.canadacentral-01.azurewebsites.net'
 ]
