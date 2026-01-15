@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -19,7 +20,10 @@ SECRET_KEY = 'django-insecure-_7cs+z5*n4c_#g=k$*uo$n!aj+wme#kd!i5&0es*)a@des_h$*
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.environ.get(
+    "DJANGO_ALLOWED_HOSTS",
+    "localhost 127.0.0.1"
+).split(" ")
 
 
 INSTALLED_APPS = [
