@@ -22,8 +22,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = os.environ.get(
     "DJANGO_ALLOWED_HOSTS",
-    "localhost 127.0.0.1",
-    "https://victor291201.github.io/frontend-Angular",
+    "localhost 127.0.0.1"
 ).split(" ")
 
 
