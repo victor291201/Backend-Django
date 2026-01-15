@@ -23,7 +23,7 @@ DEBUG = True
 ALLOWED_HOSTS = os.environ.get(
     "DJANGO_ALLOWED_HOSTS",
     "localhost 127.0.0.1",
-    "https://victor291201.github.io/frontend-Angular/",
+    "https://victor291201.github.io/frontend-Angular",
 ).split(" ")
 
 
@@ -113,5 +113,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
     "http://tasks-notes-g3e4hubxd2fxcaej.canadacentral-01.azurewebsites.net",
     "https://tasks-notes-g3e4hubxd2fxcaej.canadacentral-01.azurewebsites.net",
-    "https://victor291201.github.io/frontend-Angular/",
+    "https://victor291201.github.io/frontend-Angular",
+    "https://victor291201.github.io",
 ]
